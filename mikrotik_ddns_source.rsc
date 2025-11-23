@@ -17,9 +17,8 @@
 
 :local envid [/system script environment find where name="cfLastIP"]
 :global cfLastIP;
-:local onboot false
 
-:if ($onboot) do={
+:if ($envid = "" ) do={
     :set cfLastIP ""
 }
 
@@ -87,7 +86,7 @@
 
     # 7) เซฟ IP ล่าสุดลง global cfLastIP
     :set cfLastIP $currentIP;
-    :set onboot true
+
 
     :log info "CF-DDNS: update request sent.";
 }
