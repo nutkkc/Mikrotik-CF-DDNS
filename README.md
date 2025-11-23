@@ -1,5 +1,6 @@
 # Mikrotik-CF-DDNS
 Script Mikrotik CloudFlare API IP DDNS Update
+เขียนโดย ChatGPT 
 
 สคริปต์นี้ใช้สำหรับทำ **Dynamic DNS (DDNS)** บน MikroTik โดยอัปเดตค่า A record บน **Cloudflare** อัตโนมัติ  
 ผ่าน Cloudflare API และใช้ `:resolve myip.opendns.com` เพื่อดึง **Public IP จริง** ของเรา
