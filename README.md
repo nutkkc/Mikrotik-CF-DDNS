@@ -8,7 +8,7 @@ Script Mikrotik CloudFlare API IP DDNS Update
 
 - `mikrotik_ddns.rsc`
 
-> รองรับ RouterOS v6 / v7 (ทดสอบบน v7 แล้วทำงานได้จริง)
+> รองรับ v7 (ทดสอบบน v7 แล้วทำงานได้จริง)
 
 ## ฟีเจอร์
 
