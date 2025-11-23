@@ -23,9 +23,8 @@ add dont-require-permissions=no name=cloudflare-ddns owner=admin policy=\
     \n\
     \n:local envid [/system script environment find where name=\"cfLastIP\"]\
     \n:global cfLastIP;\
-    \n:local onboot false\
     \n\
-    \n:if (\$onboot) do={\
+    \n:if (\$envid = \"\") do={\
     \n    :set cfLastIP \"\"\
     \n}\
     \n\
@@ -135,7 +134,7 @@ add dont-require-permissions=no name=cloudflare-ddns owner=admin policy=\
     \n    # 7) \E0\B9\80\E0\B8\8B\E0\B8\9F IP \E0\B8\A5\E0\B9\88\E0\B8\B2\E0\
     \B8\AA\E0\B8\B8\E0\B8\94\E0\B8\A5\E0\B8\87 global cfLastIP\
     \n    :set cfLastIP \$currentIP;\
-    \n    :set onboot true\
     \n\
     \n    :log info \"CF-DDNS: update request sent.\";\
     \n}"
+
