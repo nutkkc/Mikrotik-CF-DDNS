@@ -75,4 +75,4 @@ Script Mikrotik CloudFlare API IP DDNS Update
 
 ## License
 
-MIT License (หรือระบุของคุณเอง)
+MIT License 
